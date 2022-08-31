@@ -1,0 +1,176 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+
+body,
+html {
+    margin: 0;
+  height: 100%;
+}
+
+:root {
+    --color-primary: #00e4ff;
+    --color-secondary: #f6f6f6;
+    --color-fundo: rgba(6, 5, 28, 1);
+    --font-primaria:'Montserrat';
+}
+body{
+    color: var(--color-primary);
+    font-family: var(--font-primaria);
+    background-color: var(--color-fundo);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+.menu{
+  position: fixed;
+  align-items: baseline;
+  left: 50%;
+  top: 15%;
+  list-style:none;
+  float:left;
+  transform: translate(-50%, -50%);
+  }
+
+.menu li{
+  position:relative;
+  float:left;
+}
+
+.menu li a{ 
+  text-decoration:none; 
+  padding:5px 10px; 
+  display:block;
+  color: #00e4ff;
+  font-size: 30px;
+}
+
+.menu li a:hover{
+  border: 1px solid #00e4ff;
+  border-radius: 10px;
+}
+
+    .menu li  ul{
+      position:absolute;
+
+      top:57px;
+      left:0;
+      display:none;
+      }
+
+      .menu li:hover ul, .menu li.over ul{
+        display:block;
+      }
+
+
+      .menu li ul li{
+        font-size: 20px;
+        border: #00e4ff solid 1px;
+        border-radius: 10px;
+        display:block;
+        width: 200px;
+        }
+
+.rodape{
+  position: absolute;
+  top: 90%;
+  left: 5%;
+}
+
+.lupa{
+  position: absolute;
+  left: 93%;
+  top: 90%;
+  right: 10%;
+}
+
+
+.imagemInicio{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  width: 350px;
+  height: 230px;
+  padding: 2rem;
+  text-align: center;
+  border: dashed 1px #38424c;
+  position: relative;
+  margin: 0 auto;
+
+  input {
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+/*   label {
+    color: white;
+    width: 183px;
+    height: 44px;
+    border-radius: 21.5px;
+    background-color: var(--corDestaque);
+    padding: 8px 16px;
+  } */
+
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+}
+
+.vertical-center-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .vertical-center-modal .ant-modal {
+    top: 0;
+  }
+  
+  .vertical-center-modal .ant-modal .ant-btn {
+    background: var(--color-fundo);
+    box-shadow: 0 0 0 6px var(--sombraEscura);
+    color: var(--brancoText);
+    font-weight: 300;
+  }
+  
+  .vertical-center-modal .ant-btn {
+    box-shadow: 0 0 0 6px var(--sombraEscura);
+    color: var(--brancoText);
+    font-weight: 300;
+    border-radius: 30px;
+  }
+  
+  .vertical-center-modal .ant-btn:hover, .vertical-center-modal .ant-btn:focus {
+    background: linear-gradient(0deg, var(--corLaranja)  0%, var(--corDestaque) 100%);
+    color: var(--brancoText);
+    font-weight: 300;
+  }
+  
+  .vertical-center-modal .ant-modal .ant-modal-content {
+    background: var(--color-fundo);
+    border: 1px var(--corBordarCinza) solid;
+    box-shadow: 0px 5px 20px var(--sombraEscura);
+    border-radius: 8px;
+    opacity: 1;
+    font-weight: 300;
+  }

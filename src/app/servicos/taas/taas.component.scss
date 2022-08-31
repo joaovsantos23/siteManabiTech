@@ -1,0 +1,73 @@
+.imagem{
+    position: absolute; 
+    top: 10%;
+    left: 55%;
+    max-width: 650px;
+    max-height: 650px;
+    width: auto;
+    height: auto;
+}
+
+.texto-saas{
+    margin-left: 25%;
+    text-align: left;
+    padding-right: 50%;
+    font-weight: lighter;
+}
+
+.titulo-saas{
+    margin-left: 25%;
+    font-size: 60px;
+    font-weight: bold; 
+    margin-top: 13%;
+}
+
+.subtitulo-saas{
+    margin-left: 25%;
+    font-size: 25px;
+    font-weight: lighter; 
+    margin-top: -5%;
+}
+
+.menu-lateral{
+    position: absolute;
+    color: #00e4ff;
+    margin-left: 3%;
+    font-size: 25px;
+    font-weight: lighter;
+    top: 35%;
+    
+}
+
+.lateral-pq{
+    position: absolute;
+    color: #00e4ff;
+    margin-left: 3%;
+    font-size: 25px;
+    font-weight: lighter;
+    top: 35%;
+}
+
+.menu-lateral:hover {
+    padding-right: 1%;
+    text-align: right;
+    margin-left: 3%;
+    width: 260px;
+    border: 2px solid #00e4ff;
+    border-radius: 10px;
+    border-left: 0px;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+
+.lateral-pq:hover {
+    padding-right: 1%;
+    text-align: right;
+    margin-left: 3%;
+    width: 120px;
+    border: 2px solid #00e4ff;
+    border-radius: 10px;
+    border-left: 0px;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
